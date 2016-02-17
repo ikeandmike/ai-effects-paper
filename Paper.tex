@@ -3,111 +3,130 @@
 \usepackage[labelfont=bf]{caption} %For making "Figure i:" label bold
 \usepackage{enumerate}
 \usepackage{hyperref}
+\usepackage[pass]{geometry}
+
+\newenvironment{myindentpar}[1]
+ {\begin{list}{}
+         {\setlength{\leftmargin}{#1}}
+         \item[]
+ }
+ {\end{list}}
+
 \begin{document}
 
-  \title{White Paper: How Artificial Intelligence Affects the Work Force}
-  \author{Michael Giancola - WR 1011}
-  \date{\today}
+  \renewcommand\footnotemark{}
+  \title{How Artificial Intelligence Affects the Work Force}
+  \author{Michael Giancola \thanks{This White Paper was written for WR 1011 at Worcester Polytechnic Institute}}
+  \date{February 19, 2016}
   \maketitle
 
   \cleardoublepage
 
+  \newgeometry{left=1.875in,right=1.875in,top=1in,bottom=1.5in}
+
   \section{Introduction}
     \paragraph{}
-      The McKinsey Global Institute identified seven emerging technologies which
-      they expect will have a one trillion dollar or greater impact on the economy.$_{[1]}$
-      One of the seven was ``Advanced Robotics''; or in other words, artificially
-      intelligent machines. The technologies, including robotics, are advancing
-      so quickly that it is difficult for companies to keep up. Employees in virtually
-      every field will have to plan ahead so they can best adapt with changing technology.
-      With the economic impact that McKinsey predicted, AI could significantly
-      stimulate the world economy - whether the change is good or bad depends
-      on how well executives prepare their companies for the changing circumstances.
+      ``Advanced Robotics'', or in other words, artificially intelligent machines (AI),
+      was identified by the McKinsey Global Institute as one of seven emerging
+      technologies they expect will have a one trillion dollar or greater impact on the economy.$_{[1]}$
+      Given McKinsey's prediction, AI will significantly influence much of the
+      world economy. However, the impact of these changes on employment, wages,
+      and productivity remains to be seen.
+      Much of the impact of AI will depend on how well executives
+      prepare their companies for the changing circumstances.
 
     \paragraph{}
-      While I wouldn’t call current day AI ``intelligent'', it plays a unique
-      role in the workforce. In particular, a large subset of these machines are used
-      for automating mundane, repetitive tasks - like checking in at the airport
-      before a flight. These machines don’t require much real intelligence,
-      because all they have to do is request some data from a user, provide means
-      of inputting that data, and finally pass the information along to where it
-      needs to go.
+      In a \textit{NarrativeScience} study, over 90\% of respondents said that
+      their company uses AI primarily for automation.$_{[2]}$ In general, intelligent
+      machines are used for automating repetitive tasks.
+      The present economic impact of AI is clear in the manufacturing
+      industry. Employment of manufacturing workers costs around \$6
+      trillion, representing 19\% of global employment costs.$_{[1]}$
 
     \paragraph{}
       With the advent of true AI, much more sophisticated work will be able to
       be automated by machines. A truly intelligent machine would be able to
       replace most knowledge workers. That is, people whose job it is to think.
-      This includes academics, engineers, insurance underwriters, and many more.
-      While current day automation affects a low echelon of work, true AI could
-      rock the middle class job market, causing a large sector of the working
-      class to lose their jobs.
+      This includes academics, engineers, insurance underwriters, lawyers, teachers,
+      and physicians.
+      The projected economic impact to knowledge workers could be even greater than
+      in the manufacturing industry. Approximately \$9 trillion is spent on employing
+      knowledge workers, representing 27\% of global employment costs.$_{[1]}$
+      Experts at McKinsey predict that autonomous tools will be able to do the
+      work of 110 to 140 million full time employees by 2025.$_{[1]}$
 
     \paragraph{}
       As is usually the case with emerging technology, corporate executives have
       two options: resist, or adapt. In this scenario, it seems advantageous for
-      everyone involved to adapt. True AI is inevitable, and any company that
+      those involved to adapt. True AI is inevitable, and any company that
       refuses to adapt to the changing circumstances will be unable to compete
-      in their market. Furthermore, if our society plans ahead, and determines
-      how to best coexist with intelligent machines, it could increase our
-      productivity exponentially.
+      in their market. Furthermore, if effected companies determine how to best
+      use these tools (which do the work of 110 million people) in unison
+      with the employees they have now, their productivity will increase exponentially.
 
   \section{Types of Intelligence}
 
     \paragraph{}
-      With the many different examples of AI in society today, like airport kiosks,
-      Siri, and Google's autonomous car, it is difficult to define exactly what
-      artificial intelligence is. However, in my opinion, we can categorize them
-      into three distinct groups. The first is ``dumb''
-      intelligence; these machines automate a simple task, usually by requesting
-      data from a user and performing a task based on that data. A simple example
-      is a airport kiosks used to check in before a flight. They are not intelligent at all,
-      they just follow a simple computer program. However, they are well known
-      and relevant to the discussion of AI.
+      Current applications of AI can be seen in airport kiosks, Siri, and Google's
+      autonomous car. Yet, it is difficult to define exactly what artificial
+      intelligence is. AI can be categorized into three distinct groups: Dumb
+      intelligence, simulated intelligence, and true intelligence.\\
 
-    \paragraph{}
-      The second is ``simulated'' intelligence;
-      these machines analyze the data that they receive in a way that makes them
-      appear intelligent.
+    \begin{myindentpar}{1cm}
+      Dumb Intelligence: These machines automate a simple task, usually by requesting
+      data from a user and performing a task based on that data; hence, the
+      oxymoronic name ``dumb'' intelligence. A simple example of this type of AI
+      is an airport kiosk used to check in before a flight. They are not intelligent at all,
+      they just follow a simple computer program. However, they are well known
+      and relevant to the discussion of AI.\\
+
+      Simulated Intelligence: These machines analyze the data that they
+      receive in a way that makes them appear intelligent.
       For example, a GPS can find a route between two points, and even figure out what
       to do if there's a detour along the path. However, in reality it is just a
-      simple algorithm processing a relatively small amount of data.
+      simple algorithm processing a relatively small amount of data.\\
 
-    \paragraph{}
-      For a machine to possess ``true'' intelligence, it should be able to perform some action,
+      True Intelligence: The machine should be able to perform some action,
       assess the consequences of its action, and, ultimately, learn from its
-      successes and failures. This isn't a hard definition; I think that
-      AI will continue to adapt, and so will our definition of intelligence.
+      successes and failures.
+    \end{myindentpar}
 
     \paragraph{}
-      Figure 1 shows what surveyed executives believe constitutes artificial
-      intelligence. Like almost one third of people surveyed, I believe that
-      artificial intelligence is a combination of the things listed. The ability
-      to learn and adapt is, to me, the hallmark of AI. However for AI to feel
-      ``real'' to most people, it must be able to communicate with them in a
-      reasonable manner. My prediction is that all of these components will come
-      together in the next few decades as artificial intelligence continues to
-      advance.\\
+      Figure 1 shows results from a \textit{NarrativeScience} survey of 200 C-Suite
+      executives about what they believe constitutes artificial intelligence.
+      Respondents worked in a range of fields including technology, health care,
+      and finance. Almost one third of people surveyed believe that
+      artificial intelligence is a combination of the things listed in the graphic
+      on the following page. %TODO Ensure this is correct
 
-      \begin{figure}[ht]
-        \centering
-        \captionsetup{width=.85\linewidth}
-        \includegraphics[width=0.85\textwidth,height=\textheight, keepaspectratio]{Figure1}
-        \caption{Enterprise leaders are surveyed on their perceptions of AI in the workforce.
-                 \href{http://thumbnails-visually.netdna-ssl.com/artificial-intelligence-is-not-killing-jobs_557b4376e27b8_w1500.jpg}
-                 {\textbf{Source}}}
-      \end{figure}
+    \paragraph{}
+      The ability to learn and adapt is the hallmark of AI. However for AI to feel
+      ``real'' to most people, it must be able to communicate in a
+      reasonable manner. All of these components will come
+      together in the next few decades as artificial intelligence continues to
+      advance.
+
+    \begin{figure}[ht]
+      \centering
+      \captionsetup{width=.85\linewidth}
+      \includegraphics[width=0.85\textwidth,height=\textheight, keepaspectratio]{Figure1}
+      \caption{Enterprise leaders are surveyed on their perceptions of AI in the workforce.
+               \href{http://thumbnails-visually.netdna-ssl.com/artificial-intelligence-is-not-killing-jobs_557b4376e27b8_w1500.jpg}
+               {\textbf{Source}}}
+    \end{figure}
 
   \cleardoublepage
 
   \section{Current Effects}
     \paragraph{}
-      Another interesting statistic from the survey cited in the figure above is
-      that ``only 15\% [of people surveyed] believe that AI eliminates jobs''.$_{[2]}$
-      This statistic really surprised me, as it seems to counter popular opinion
-      - just see how many articles come up from Google searching ``Artificial Intelligence
-      Destroys Jobs''. However, this particular study from \textit{NarrativeScience}
-      found that AI may actually play a very positive role in the workplace. In
-      fact, \\
+      According to \textit{NarrativeScience}, ``only 15\% [of people surveyed]
+      believe that AI eliminates jobs''.$_{[2]}$ This statistic may initially
+      appear counter to popular opinion. A Google search using the key words
+      ``Artificial Intelligence Destroys Jobs'' produces more than a half million
+      articles. However, this particular study from \textit{NarrativeScience}
+      found that corporate leaders believe that AI may actually play a very
+      positive role in the workplace. As the \textit{NarrativeScience} report
+      wrote,
 
       \begin{center}
         \fbox{
@@ -121,22 +140,14 @@
       \end{center}
 
     \paragraph{}
-      While this outlook is nice, other studies still believe that AI has
+      While this outlook is more positive, other studies still believe that AI has
       the potential to hurt the job market. Figure 2 compares
       the labor productivity in the US to the relative
-      level of private employment. There is a strong correlation between them
+      level of private employment. There is a strong correlation between both factors
       until the early 2000s, where the trend stops. Many economists, including
       Erik Brynjolfsson, believe this could be cause for concern.
       In an interview with TechRepublic, Brynjolfsson
       commented on this trend:
-
-      \begin{figure}[h]
-        \centering
-        \includegraphics[width=\textwidth,height=\textheight, keepaspectratio]{Figure2}
-        \caption{Labor Productivity vs. Private Employment.
-                 \href{http://www.techrepublic.com/article/ai-is-destroying-more-jobs-than-it-creates-what-it-means-and-how-we-can-stop-it/}
-                 {\textbf{Source}}}
-      \end{figure}
 
       \begin{center}
         \fbox{
@@ -149,28 +160,34 @@
         }
       \end{center}
 
+      \begin{figure}[ht]
+        \centering
+        \includegraphics[width=\textwidth,height=\textheight, keepaspectratio]{Figure2}
+        \caption{Labor Productivity vs. Private Employment.
+                 \href{http://www.techrepublic.com/article/ai-is-destroying-more-jobs-than-it-creates-what-it-means-and-how-we-can-stop-it/}
+                 {\textbf{Source}}}
+      \end{figure}
+
     \paragraph{}
-      While it is true that this is a serious concern that we must attend to,
-      there was a lot of technological advancement in the late 90’s through
-      the early 2000s. Therefore, it is near impossible to claim that AI was
+      It is difficult to claim that AI was
       the sole cause for the disparity between labor productivity and private
       employment. Indeed, it is difficult to single out the effects of AI,
-      especially because it is such a new development. As such, I believe that
-      the results of the \textit{NarrativeScience} study should be more closely
-      considered. Companies which utilize AI will have an advantage
+      especially because it is such a new development. The results of the
+      \textit{NarrativeScience} study should be more closely considered.
+      Even if, and in some cases, especially if, AI reduces employment and
+      increases productivity, companies which utilize AI will have an advantage
       over their competitors who do not.
 
   \section{Collaboration of Man and Machine}
 
     \paragraph{}
-      Now, onto the important question that this paper attempts to answer.
       If companies are to improve their productivity by introducing intelligent
       machines to the workplace, how can these machines
        and humans best collaborate? More importantly, what will be the place
       of humans in the workforce, with robots doing a lot of the work that humans
       do now?
 
-      \begin{figure}[h]
+      \begin{figure}[ht]
         \centering
         \captionsetup{width=.85\linewidth}
         \includegraphics[width=0.85\textwidth,height=\textheight, keepaspectratio]{Figure3}
@@ -184,7 +201,7 @@
       study referenced earlier. They found that over 90\% of respondents use AI
       primarily for automation. Many repetitive, mundane tasks can easily be
       done by intelligent machines. However, soon they will be able to take over
-      more complex tasks.
+      more complex tasks as well.
 
     \paragraph{}
       Journalists Martin Dewhurst and Paul Willmott of McKinsey \& Company
@@ -194,7 +211,7 @@
       decisions, like deciding the direction for the future of the company.
 
     \paragraph{}
-      There is also a basic need for “soft skills”, which Dewhurst and Willmott
+      There is also a basic need in industry for “soft skills”, which Dewhurst and Willmott
       believe robots will never attain. At least in the foreseeable future, it
       is difficult to imagine humans willingly taking orders from a robot.
       Similarly, it seems unlikely that a robot leader could inspire the same
@@ -210,9 +227,9 @@
       Alert the presses, yell from the rooftops, robots are \textit{not} coming
       for your jobs. While it may seem that intelligent machines are going to
       replace us, a machine is as likely to replace the human worker as a printer
-      is. Sure, a printer takes the job of a scribe who would have written the
+      is. On one hand, a printer takes the job of a scribe who would have written the
       documents that it now prints. On the other hand, it frees up humans to
-      do more important work. I believe this is what intelligent machines will
+      do more important work. This is what intelligent machines will one day
       do as well.
 
     \paragraph{}
@@ -229,6 +246,8 @@
 
   \cleardoublepage
 
+  \restoregeometry
+
   \section{Citations}
     \begin{enumerate}[ {[}1{]} ]
       \item James Manyika, Michael Chui, Jacques Bughin, Richard Dobbs,
@@ -236,7 +255,9 @@
             Advances that will transform life, business, and the global economy''
             \textit{McKinsey\&Company}.
             \href{http://www.mckinsey.com/insights/business_technology/disruptive_technologies}{\textbf{Link}}
-            Last Accessed 2/11/16
+            Last Accessed 2/11/16 \\
+            \textit{Note: Some of the statistics I use are from the full report. There is a PDF download
+                    link to it on the webpage linked above.}
 
       \item NA (2015). ``2015 State of Artificial Intelligence \& Big Data in
             the Enterprise'' \textit{NarrativeScience}.
